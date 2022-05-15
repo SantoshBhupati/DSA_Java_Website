@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACESSING_ELEMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">ARRAYS – ACESSING_ELEMENT OF AN ARRAYS</p>
+    </div> 
+    <div class="main_information_box">
+        <div class="acessing_element">
+            <h2>Accessing Java Array Elements using Loop</h2>
+            <hr class="common_horizonatl_line">
+            <p>Each element in the array is accessed via its index. The index begins with 0 and ends at (total array size)-1. All the elements of array can be accessed using Java for Loop.</p>
+            <div class="special_declartion">
+                <p>// accessing the elements of the specified array<br><br>
+                    for (int i = 0; i < arr.length; i++)<br>
+                      System.out.println("Element at index " + i + 
+                                                    " : "+ arr[i]);</p><br>
+            </div>
+            <div class="special_declartion">
+                <p>// Java program to illustrate creating an array<br>
+                    // of integers,  puts some values in the array,<br>
+                    // and prints each value to standard output.<br>
+                      <br>
+                    class Main<br> 
+                    {<br>
+                        public static void main (String[] args)<br> 
+                        {         <br>
+                          // declares an Array of integers.<br>
+                          int[] arr;<br>
+                              <br>
+                          // allocating memory for 5 integers.<br>
+                          arr = new int[5];<br>
+                              
+                          // initialize the first elements of the array
+                          arr[0] = 10;<br>
+                              <br>
+                          // initialize the second elements of the array<br>
+                          arr[1] = 20;<br>
+                              <br>
+                          //so on...<br>
+                          arr[2] = 30;<br>
+                          arr[3] = 40;<br>
+                          arr[4] = 50;<br>
+                              <br>
+                          // accessing the elements of the specified array<br>
+                          for (int i = 0; i < arr.length; i++)<br>
+                             System.out.println("Element at index " + i + 
+                                                          " : "+ arr[i]);<br>          
+                        }<br>
+                    }<br><br></p>
+            </div>
+            <div class="special_declartion">
+                <p>
+                    <br>
+                    Element at index 0 : 10<br>
+Element at index 1 : 20<br>
+Element at index 2 : 30<br>
+Element at index 3 : 40<br>
+Element at index 4 : 50<br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
