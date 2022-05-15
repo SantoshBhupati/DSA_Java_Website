@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Declation</title>
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">ARRAYS – DECLARTION</p>
+    </div>
+    <div class="main_information_box">
+    <div class="declaration_of_an_array">
+        <h2>Declartion Of an Array</h2>
+        <hr class="common_horizonatl_line"> 
+        <p>In Java, array is an object of a dynamically generated class. Java array inherits the Object class, and implements the Serializable as well as Cloneable interfaces. We can store primitive values or objects in an array in Java. Like C/C++, we can also create single dimentional or multidimentional arrays in Java.</p>
+        <div class="special_declartion">
+            <p>datatype[] variablename = new datatype[size];
+            </p>
+        </div>
+        <p>eg, we want to store roll numbers:</p>
+        <div class="special_declartion">
+            <p>int[] rollnos = new int[5];
+      <br><br>
+                OR
+       <br><br>
+       int[] rollnos = {51, 82, 13, 15, 16};
+            </p>
+        </div>
+        <p><b>int</b> represents the type of data, all the elements in the array should be of same data type, here it is int so the elements in the should be of int data type.</p>
+        <div class="special_declartion">
+            <p>int[] rollnow; //declaration of arrays
+            <br><br>
+                //rollnos get defined in stack</p>
+        </div>
+        <p style="font-size: 20px; margin-bottom:20px; margin-top:20px;">There are <b>two types</b> of Arrays:
+        <br>
+        <ul class="right_margin">
+            <li>Single Dimensional Arrays</li>
+            <li>Multidimentional Arrays</li>
+        </ul>
+        </p>
+        <p>Let's understand these in detail:</p>
+        <h2>Single Dimensional Arrays</h2>
+        <hr class="common_horizonatl_line">
+        <p>The general form of a one-dimensional array declaration is</p>
+        <div class="special_declartion">
+            <p>type var-name[];<br>
+            OR<br>
+            type[] var-name;
+            </p>
+        </div>
+        <p>An array declaration has two components: the type and the name. type declares the element type of the array. The element type determines the data type of each element that comprises the array. Like an array of integers, we can also create an array of other primitive data types like char, float, double, etc. or user-defined data types (objects of a class). Thus, the element type for the array determines what type of data the array will hold Example:</p>
+        <div class="special_declartion">
+          <p>  // both are valid declarations<br>
+int intArray[]; <br>
+or int[] intArray; <br><br>
+
+byte[] byteArray;<br>
+short[] shortsArray;<br>
+boolean[] booleanArray;<br>
+long[] longArray;<br>
+float[] floatArray;<br>
+double[] doubleArray;<br>
+char[] charArray;<br>
+
+// an array of references to objects of<br>
+// the class MyClass (a class created by<br>
+// user)<br>
+MyClass myClassArray[];<br> 
+
+Object[]  ao,        // array of Object<br>
+Collection[] ca;  // array of Collection<br>
+                     // of unknown type<br>
+                     </p>
+        </div>
+        <p>Although the first declaration above establishes the fact that intArray is an array variable, no actual array exists. It merely tells the compiler that this variable (intArray) will hold an array of the integer type. To link intArray with an actual, physical array of integers, you must allocate one using new and assign it to intArray.</p>
+        <h2>Instantiating an Array in Java</h2>
+        <p>When an array is declared, only a reference of array is created. To actually create or give memory to array, you create an array like this:The general form of new as it applies to one-dimensional arrays appears as follows:</p>
+        <div class="special_declartion"><p>var-name = new type [size];</p></div>
+        <p>Here, type specifies the type of data being allocated, size specifies the number of elements in the array, and var-name is the name of array variable that is linked to the array. That is, to use new to allocate an array, you must specify the type and number of elements to allocate.
+
+        </p>
+        <h2>Example:</h2>
+        <div class="special_declartion">
+            <p>
+                int intArray[];    //declaring array<br>
+intArray = new int[20];  // allocating memory to array<br>
+OR<br><br>
+
+int[] intArray = new int[20]; // combining both statements in one
+            </p>
+        </div>
+        <img src="./Img/one_dimensional_array.png" alt="" style="margin-top: 10px; margin-bottom:10px; width: 700px;">
+        <h2>Note :</h2>
+        <p>1)The elements in the array allocated by new will automatically be initialized to zero (for numeric types), false (for boolean), or null (for reference types).Refer Default array values in Java
+            Obtaining an array is a two-step process. <br>2)First, you must declare a variable of the desired array type. Second, you must allocate the memory that will hold the array, using new, and assign it to the array variable. Thus, in Java all arrays are dynamically allocated.</p>
+            <h2>Multidimensional Arrays</h2>
+        <hr class="common_horizonatl_line"> 
+        <p>Multidimensional arrays are arrays of arrays with each element of the array holding the reference of other array. These are also known as Jagged Arrays. A multidimensional array is created by appending one set of square brackets ([]) per dimension. Examples:</p>
+        <div class="special_declartion">
+            <p>int[][] intArray = new int[10][20]; //a 2D array or matrix<br><br>
+int[][][] intArray = new int[10][20][10]; //a 3D array<br></p>
+        </div>
+        <img src="./Img/3D-array.jpg" alt=""> 
+    </div>
+
+    </div>
+</body>
+</html>
