@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSERTING_ELEMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">ARRAYS – INSERTING_ELEMENT</p>
+    </div>
+    <div class="main_information_box">
+        <div class="inserting_element_array">
+            <h2>How to Insert an element at a specific position in an Array in Java</h2>
+            <hr class="common_horizonatl_line">
+            <p>Given an array arr of size n, this article tells how to insert an element x in this array arr at a specific position pos.</p> 
+            <img src="./img/Insert-an-element-at-a-specific-position-in-an-Array.jpg"  alt="" style="height:300px ;width:900px ;"><br><br>
+            <p>1)First get the element to be inserted, say x<br>
+                2)Then get the position at which this element is to be inserted, say pos<br>
+                3)Create a new array with the size one greater than the previous size<br>
+                4)Copy all the elements from previous array into the new array till the position pos<br>
+                5)Insert the element x at position pos<br>
+                6)Insert the rest of the elements from the previous array into the new array after the pos<br><br><br></p>
+                <p>Below is the implementation of the above approach</p><br><br>
+                <div class="special_declartion">
+                    <p>// Java Program to Insert an element<br>
+                        // at a specific position in an Array<br>
+                        <br>
+                        import java.io.*;<br>
+                        import java.lang.*;<br>
+                        import java.util.*;<br>
+                        <br>
+                        class GFG {<br>
+                        <br>
+                            // Function to insert x in arr at position pos<br>
+                            public static int[] insertX(int n, int arr[],<br>
+                                                        int x, int pos)<br>
+                            {<br>
+                                int i;<br>
+                        <br>
+                                // create a new array of size n+1<br>
+                                int newarr[] = new int[n + 1];<br>
+                        <br>
+                                // insert the elements from<br>
+                                // the old array into the new array<br>
+                                // insert all elements till pos<br>
+                                // then insert x at pos<br>
+                                // then insert rest of the elements<br>
+                                for (i = 0; i < n + 1; i++) {<br>
+                                    if (i < pos - 1)<br>
+                                        newarr[i] = arr[i];<br>
+                                    else if (i == pos - 1)<br>
+                                        newarr[i] = x;<br>
+                                    else<br>
+                                        newarr[i] = arr[i - 1];<br>
+                                }<br>
+                                return newarr;<br>
+                            }<br>
+                        <br>
+                            // Driver code<br>
+                            public static void main(String[] args)<br>
+                            {<br>
+                        <br>
+                                int n = 10;<br>
+                                int i;<br>
+                        <br>
+                                // initial array of size 10<br>
+                                int arr[]<br>
+                                    = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };<br>
+                        <br>
+                                // print the original array<br>
+                                System.out.println("Initial Array:\n"<br>
+                                                + Arrays.toString(arr));<br>
+                        <br>
+                                // element to be inserted<br>
+                                int x = 50;<br>
+                        <br>
+                                // position at which element<br>
+                                // is to be inserted<br>
+                                int pos = 5;<br>
+                        <br>
+                                // call the method to insert x<br>
+                                // in arr at position pos<br>
+                                arr = insertX(n, arr, x, pos);<br>
+                        <br>
+                                // print the updated array<br>
+                                System.out.println("\nArray with " + x<br>
+                                                + " inserted at position "<br>
+                                                + pos + ":\n"<br>
+                                                + Arrays.toString(arr));<br>
+                            }<br>
+                        }<br>
+                        </p><br><br>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
