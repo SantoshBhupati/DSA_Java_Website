@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleting_Element</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">ARRAYS – DELETING_ELEMENT</p>
+    </div>
+    <div class="main_information_box">
+        <div class="deleting_element_array">
+            <h2>Remove an Element at Specific Index from an Array in Java</h2>
+            <hr class="common_horizonatl_line">
+            <p>Given an array of a fixed length. The task is to remove an element at a specific index from the array.</p>
+            <h3>Examples:             </h3><br>
+            <p>Input: arr[] = { 1, 2, 3, 4, 5 }, index = 2<br>
+                Output: arr[] = { 1, 2, 4, 5 }<br>
+                <br>
+                Input: arr[] = { 4, 5, 9, 8, 1 }, index = 3<br>
+                Output: arr[] = { 4, 5, 9, 1 }<br><br></p>
+                <p>An array is a data structure that contains a group of elements. Typically these elements are all of the same data type, such as an integer or string. Arrays are commonly used in computer programs to organize data so that a related set of values can be quickly sorted or searched. All the items of the array are stored at contiguous memory locations. </p>
+
+                <h3> Using Another Array</h3>
+                <p>The basic approach includes finding the element at the specified index and then removing that element. The rest of the elements are copied into a new array. This would lead to an array of size one less than the original array. Below is the implementation of the above approach: 
+
+                </p>
+                <div class="special_declartion">
+                    <p>
+                        // Java program to remove an element<br>
+// from a specific index from an array<br>
+<br>
+import java.util.Arrays;<br>
+<br>
+class GFG {<br>
+<br>
+	// Function to remove the element<br>
+	public static int[] removeTheElement(int[] arr, int index)<br>
+	{<br>
+<br>
+		// If the array is empty<br>
+		// or the index is not in array range<br>
+		// return the original array<br>
+		if (arr == null || index < 0<br>
+			|| index >= arr.length) {<br>
+<br>
+			return arr;<br>
+		}<br>
+<br>
+		// Create another array of size one less<br>
+		int[] anotherArray = new int[arr.length - 1];<br>
+  <br>
+		// Copy the elements except the index<br>
+		// from original array to the other array<br>
+		for (int i = 0, k = 0; i < arr.length; i++) {<br>
+<br>
+			// if the index is<br>
+			// the removal element index<br>
+			if (i == index) {<br>
+				continue;<br>
+			}<br>
+<br>
+			// if the index is not<br>
+			// the removal element index<br>
+			anotherArray[k++] = arr[i];<br>
+		}<br>
+        <br>
+
+		// return the resultant array<br>
+		return anotherArray;<br>
+	}<br>
+   <br>
+	// Driver Code<br>
+	public static void main(String[] args)<br>
+	{<br>
+ <br>
+		// Get the array<br>
+		int[] arr = { 1, 2, 3, 4, 5 };<br>
+  <br>
+		// Print the resultant array<br>
+		System.out.println("Original Array: "<br>
+						+ Arrays.toString(arr));<br>
+<br>
+		// Get the specific index<br>
+		int index = 2;<br>
+<br>
+		// Print the index<br>
+		System.out.println("Index to be removed: " + index);<br>
+<br>
+		// Remove the element<br>
+		arr = removeTheElement(arr, index);<br>
+<br>
+		// Print the resultant array<br>
+		System.out.println("Resultant Array: "<br>
+						+ Arrays.toString(arr));<br>
+	}<br>
+}<br>
+<br>
+<br>
+                    </p>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
