@@ -14,7 +14,6 @@
   
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-color: rgb(248, 253, 253);
-    
 }
 .dsa{
     margin-left: 20px;
@@ -23,7 +22,6 @@
 .intro{
     margin-right: 20px;
     font-size: 15px;
-    font-weight: 500;
 }
 .main_information_box{
     width: 80%;
@@ -31,11 +29,11 @@
     margin-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.declaration_of_an_array{
+.Application_Array{
     padding-left: 50px;
     padding-right: 50px;
 }
-.declaration_of_an_array h2{
+.Application_Array h2{
     font-weight: 400;
     padding-top: 30px;
     padding-bottom: 15px;
@@ -46,26 +44,8 @@
     background-color: #713f12;
     margin-bottom: 10px;
 }
-.declaration_of_an_array p{
-    font-weight: 300;
-    line-height: 25px;
-}
-.special_declartion{
-    background-color: black;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-.special_declartion p{
-    padding: 10px;
-    color: white;
-    padding-left: 25px;
-    
-}
-.right_margin{
-    margin-left: 15px;
-    font-size: 17px;
+.Application_Array p{
     font-weight: 400;
-}
-.right_margin li{
-    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 35px;
 }
