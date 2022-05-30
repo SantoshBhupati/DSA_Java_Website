@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleting Element From Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">STACK – DELETING_ELEMENT</p>
+    </div>
+    <div class="main_information_box">
+        <div class="deleting_element">
+     <h2>Delete Element From Stack </h2>
+     <hr class="common_horizonatl_line">
+     <p><b>An element can be removed from a stack using the java.util.Stack.pop() method.</b> This method requires no parameters and it removes the element at the top of the stack. It returns the element that was removed.</p>
+     <br>
+     <br>
+     <img src="./img/stack_pop.png" alt="">
+     <br>
+     <br>
+     <div class="special_declartion">
+         <pre>import java.util.*;
+
+            public class InBuiltExamples {
+            
+                public static void main(String[] args) {
+                    Stack<span>< Integer ></span> stack = new Stack<>();
+                    stack.push(34);
+                    stack.push(45);
+                    stack.push(2);
+                    stack.push(9);
+                    stack.push(18);
+            
+                    System.out.println(stack.pop());
+                    System.out.println(stack.pop());
+                    System.out.println(stack.pop());
+                    System.out.println(stack.pop());
+                    System.out.println(stack.pop());
+                
+                    }
+                }
+                </pre>
+     </div>
+     <h4>Output</h4>
+     <div class="special_declartion">
+         <pre>
+             18
+             9
+             2
+             45
+             34
+         </pre>
+     </div>
+     </div>
+     </div>
+</body>
+</html>

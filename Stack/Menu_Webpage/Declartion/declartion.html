@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Declartion Of Stack</title>
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">STACK– DECLARTION</p>
+    </div>
+    <div class="main_information_box">
+        <div class="declaration_of_Stack">
+            <h2>Declartion Of Stack</h2>
+            <hr class="common_horizonatl_line"> 
+            <h3>Stack Class in Java</h3>
+            <p>Java Collection framework provides a Stack class that models and implements a Stack data structure. The class is based on the basic principle of last-in-first-out. In addition to the basic push and pop operations, the class provides three more functions of empty, search, and peek. The class can also be said to extend Vector and treats the class as a stack with the five mentioned functions. The class can also be referred to as the subclass of Vector.
+
+            </p>
+            <p><b>How to Create a Stack?</b><br>
+                In order to create a stack, we must import java.util.stack package and use the Stack() constructor of this class. The below example creates an empty Stack.<br>
+                
+                <b>Stack stack = new  Stack();</b><br>
+                
+                Here E is the type of Object.</p>
+                <h4>Example : </h4>
+                <div class="special_declartion">
+                    <pre>
+                        public static void main (String[] args)
+                        {
+                            Stack <span> < Integer ></span> stack = new Stack<span>< Integer ></span>();
+                      
+                            stack_push(stack);
+                            stack_pop(stack);
+                            stack_push(stack);
+                            stack_peek(stack);
+                            stack_search(stack, 2);
+                            stack_search(stack, 6);
+                        }
+                    
+                    </pre>
+                </div>
+                <h3>Custom Stack :</h3>
+                <p>We  Can Create Custom Stack With The Help Of Array DataStructure  </p>
+                <div class="special_declartion">
+                    <pre>
+                        public class CustomStack {
+                            protected int[] data;
+                            private static final int DEFAULT_SIZE = 10;
+                        
+                            int ptr = -1;
+                        
+                            public CustomStack(){
+                                this(DEFAULT_SIZE);
+                            }
+                        
+                            public CustomStack(int size) {
+                                this.data = new int[size];
+                            }
+                        }                        
+                    
+                    </pre>
+                </div>
+            </div>
+              
+            </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Acessing_Element OF Stack</title>
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">STACK – ACESSING_ELEMENT OF STACK</p>
+    </div> 
+    <div class="main_information_box">
+        <div class="acessing_element">
+            <h2>Acessing Element  Of Stack</h2>
+            <hr class="common_horizonatl_line">
+          <p><b>Stack. peek() can be used to get an element from a Stack in Java without removing it.</b> This method requires no parameters and it returns the element at the top of the stack. If the stack is empty, then the EmptyStackException is thrown.</p><br>
+          <h3>Get an element from a Stack </h3>
+          <p>The method java.util.Stack.peek() can be used to get an element from a Stack in Java without removing it. This method requires no parameters and it returns the element at the top of the stack. If the stack is empty, then the EmptyStackException is thrown.
+
+        </p>
+        <br>
+        <p>A program that demonstrates this is given as follows −</p>
+        <br>
+        <h3><b>Example :</b></h3>
+        <div class="special_declartion">
+            <pre>
+import java.util.Stack;
+   public class Demo {
+    public static void main (String args[]) {
+      Stack stack = new Stack();
+      stack.push("Amy");
+      stack.push("John");
+      stack.push("Mary");
+      stack.push("Peter");
+      stack.push("Susan");
+      System.out.println("The stack elements are: " + stack);
+      System.out.println("The element at the top of the stack is: " + stack.peek());
+   }
+}
+            </pre>
+            </div>
+            <h3><b>Output :</b></h3>
+            <div class="special_declartion">
+                <pre>
+The stack elements are: [Amy, John, Mary, Peter, Susan]                    
+The element at the top of the stack is: Susan
+
+                </pre>
+            </div>
+          <p>
+            <b>Now let us understand the above program.</b><br>
+<br>
+            The Stack is created. Then Stack.push() method is used to add the elements to the stack. The stack is displayed and then the Stack.peek() method is used to return the element at the top of the stack and print it. A code snippet which demonstrates this is as follows −<br>
+            <br>
+            Stack stack = new Stack();<br>
+            stack.push("Amy");<br>
+            stack.push("John");<br>
+            stack.push("Mary");<br>
+            stack.push("Peter");<br>
+            stack.push("Susan");<br>
+            System.out.println("The stack elements are: " + stack);<br>
+            System.out.println("The element at the top of the stack is: " + stack.peek());<br>
+          </p>
+          <br>
+          <br>
+            </div>
+            </div>
+</body>
+</html>

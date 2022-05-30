@@ -68,8 +68,9 @@ a{
     word-spacing: 7px;
     font-size: 18px;
 }
-.linked_image{
-    margin-top: 20px;
-    height: 275px; width: 900px;
+.array_image{
+    /* margin-top: 400px; */
+    height: 355px; width: 1000px;
     margin-left: 400px;
+
 }

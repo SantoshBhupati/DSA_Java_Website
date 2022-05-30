@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting_Element Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">STACK – INSERTING_ELEMENT</p>
+    </div>
+    <div class="main_information_box">
+        <div class="inserting_element">
+            <h2>Inserting Element In Stack</h2>
+            <hr class="common_horizonatl_line">
+           <p><b>An element can be added into the stack by using the java.util.Stack.push() method. </b>This method pushes the required element to the top of the stack. The only parameter required for the Stack.push() method is the element that is to be pushed into the stack</p><br>
+          <h4>Let's push 20, 13, 89, 90, 11, 45, 18, respectively into the stack.</h4><br>
+          <img src="./img/stack_push.png" alt=""><br>
+          <p><b>Stack Class push() Method</b><br>
+            The method inserts an item onto the top of the stack. It works the same as the method addElement(item) method of the Vector class. It passes a parameter item to be pushed into the stack.</p>
+            <br>
+            <b>Example : </b>
+          <div class="special_declartion">
+              <pre>
+                import java.util.Stack;  
+                public class StackEmptyMethodExample  
+                {  
+                public static void main(String[] args)   
+                {  
+                //creating an instance of Stack class  
+                Stack<span>< Integer > </span>stk= new Stack<>();  
+             
+                // pushing elements into stack  
+                stk.push(78);  
+                stk.push(113);  
+                stk.push(90);  
+                stk.push(120);  
+                //prints elements of the stack  
+                System.out.println("Elements in Stack: " + stk);  
+             
+                }  
+                }  
+              </pre>
+          </div>
+          <br><b>Output : </b>
+          <div class="special_declartion">
+    <pre>
+        Elements in Stack: [78, 113, 90, 120]
+    </pre>
+          </div>
+          <br>
+            </div>
+            </div>
+</body>
+</html>
