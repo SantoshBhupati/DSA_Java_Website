@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting_Element Queue</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">QUEUE– INSERTING_ELEMENT</p>
+    </div> 
+    <div class="main_information_box">
+        <div class="inserting_element">
+            <h2>Inserting Element In Queue</h2>
+            <hr class="common_horizonatl_line">
+            <h3>Queue add() method in Java</h3>
+            <p>The add(E e) method of Queue Interface inserts the element passed in the parameter to the end of the queue if there is space. If the Queue is capacity restricted and no space is left for insertion, it returns an IllegalStateException. The function returns true on successful insertion.</p>
+            <br>
+            <b>Syntax:</b>
+            <div class="special_declartion">
+                <pre>boolean add(E e)</pre>
+                </div>
+                <br>
+                <p><b>Parameters</b>: This method accepts a mandatory parameter e which is the element to be inserted in the end of the Queue.</p><br>
+                <p><b>Returns</b>: This method returns true on successful insertion.</p><br>
+                <p><b>Exceptions</b>: The function throws four exceptions which are described as below:<br><br>
+
+                    <b>ClassCastException</b>: when the class of the element to be entered prevents it from being added to this container.<br>
+                    <b>IllegalStateException</b>: when the capacity of the container is full and insertion is done.<br>
+                    <b>IllegalArgumentException</b>: when some property of the element prevents it to be added to the queue.<br>
+                    <b>NullPointerException</b>: when the element to be inserted is passed as null and the Queue’s interface does not allow null elements.</p>
+                    <h4>Below programs illustrate add() method of Queue:</h4>
+                    <div class="special_declartion">
+                        <pre>
+ // Java Program Demonstrate add()
+// method of Queue
+
+import java.util.*;
+
+public class GFG {
+	public static void main(String[] args)
+		throws IllegalStateException
+	{
+
+		// create object of Queue
+		Queue< Integer > Q
+			= new LinkedList< Integer >();
+
+		// Add numbers to end of Queue
+		Q.add(7855642);
+		Q.add(35658786);
+		Q.add(5278367);
+		Q.add(74381793);
+
+		// before removing print queue
+		System.out.println("Queue: " + Q);
+	}
+}
+
+                        </pre>
+                        </div>
+                        <h4>Output</h4>
+                        <div class="special_declartion">
+                            <pre>  Queue: [7855642, 35658786, 5278367, 74381793]
+                            </pre>
+                            </div>
+        </div>
+            </div>
+</body>
+</html>

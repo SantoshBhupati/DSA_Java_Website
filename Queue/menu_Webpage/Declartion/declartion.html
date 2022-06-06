@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Declartion Queue</title>
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">STACK– DECLARTION</p>
+    </div>
+    <div class="main_information_box">
+        <div class="declaration_of_Stack">
+            <h2>Declartion Of Queue</h2>
+            <hr class="common_horizonatl_line"> 
+            <h3>Queue Interface In Java</h3>
+            <p>The Queue interface is present in java.util package and extends the Collection interface is used to hold the elements about to be processed in FIFO(First In First Out) order. It is an ordered list of objects with its use limited to inserting elements at the end of the list and deleting elements from the start of the list, (i.e.), it follows the FIFO or the First-In-First-Out principle.</p>
+            <img src="./img/Queue-Deque-PriorityQueue-In-Java.png" alt="">
+            <p>Being an interface the queue needs a concrete class for the declaration and the most common classes are the PriorityQueue and LinkedList in Java. Note that neither of these implementations is thread-safe. PriorityBlockingQueue is one alternative implementation if the thread-safe implementation is needed.
+
+            </p>
+            <br>
+            <p>
+                <b>Declaration</b>: The Queue interface is declared as:
+<br>
+<b>public interface Queue extends Collection</b>  
+            </p><br>
+            <p>
+                <b>Creating Queue Objects</b>: Since Queue is an interface, objects cannot be created of the type queue. We always need a class which extends this list in order to create an object. And also, after the introduction of Generics in Java 1.5, it is possible to restrict the type of object that can be stored in the Queue. This type-safe queue can be defined as:
+            </p>
+            <div class="special_declartion">
+                <pre>
+// Obj is the type of the object to be stored in Queue 
+Queue< Obj > queue = new PriorityQueue< Obj > ();  
+                </pre>
+            </div>
+            <h4>Example: Queue</h4>
+            <div class="special_declartion">
+            <pre>
+ // Java program to demonstrate a Queue
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class QueueExample {
+
+	public static void main(String[] args)
+	{
+		Queue< Integer > q
+			= new LinkedList<>();
+
+		// Adds elements {0, 1, 2, 3, 4} to
+		// the queue
+		for (int i = 0; i < 5; i++)
+			q.add(i);
+
+		// Display contents of the queue.
+		System.out.println("Elements of queue "
+						+ q);
+
+		// To remove the head of queue.
+		int removedele = q.remove();
+		System.out.println("removed element-"
+						+ removedele);
+
+		System.out.println(q);
+
+		// To view the head of queue
+		int head = q.peek();
+		System.out.println("head of queue-"
+						+ head);
+
+		// Rest all methods of collection
+		// interface like size and contains
+		// can be used with this
+		// implementation.
+		int size = q.size();
+		System.out.println("Size of queue-"
+						+ size);
+	}
+}
+
+            </pre>    
+            </div>
+            <h4>Output</h4>
+            <div class="special_declartion">
+                
+                <pre>
+  Elements of queue [0, 1, 2, 3, 4]
+removed element-0
+[1, 2, 3, 4]
+head of queue-1
+Size of queue-4
+                </pre>
+            </div>
+            </div>
+            </div>
+</body>
+</html>

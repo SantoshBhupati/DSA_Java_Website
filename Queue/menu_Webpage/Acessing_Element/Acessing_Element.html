@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Acessing_Element OF Queue</title>
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">QUEUE – ACESSING_ELEMENT OF QUEUE</p>
+    </div> 
+    <div class="main_information_box">
+        <div class="acessing_element">
+            <h2>Acessing Element  Of Queue</h2>
+            <hr class="common_horizonatl_line"><br>
+            <h3>Queue element() method in Java</h3><br>
+            <p>The <b>element()</b> method of Queue Interface returns the element at the front the container. It does not deletes the element in the container. This method returns the head of the queue.<br>
+
+                This method differs from peek() only in that it throws an exception if this queue is empty.</p>
+                <br>
+                <b>Syntax:</b>
+                <div class="special_declartion">
+                    <pre>E element()</pre>
+                </div>
+                <br>
+                <p><b>Returns</b>: This method returns the head of the Queue.</p><br>
+                <p>
+                    <b>Exception</b>: The function throws NoSuchElementException when the queue is empty and the function is called.
+                </p><br>
+                <h4>Below programs illustrate element() method of Queue:</h4>
+                <div class="special_declartion">
+                    <pre>
+ // Java Program Demonstrate element()
+// method of Queue
+
+import java.util.*;
+
+public class GFG {
+	public static void main(String[] args)
+		throws IllegalStateException
+	{
+
+		// create object of Queue
+		Queue< Integer > Q
+			= new LinkedList< Integer >();
+
+		// Add numbers to end of Queue
+		Q.add(7855642);
+		Q.add(35658786);
+		Q.add(5278367);
+		Q.add(74381793);
+
+		// print queue
+		System.out.println("Queue: " + Q);
+
+		// print head
+		System.out.println("Queue's head: " + Q.element());
+	}
+}
+
+                    </pre>
+                    </div>
+                    <h4>Output</h4>
+                    <div class="special_declartion">
+                        <pre>Queue: [7855642, 35658786, 5278367, 74381793]
+Queue's head: 7855642</pre>
+                    </div>
+                    <br><br>
+
+            </div>
+            </div>
+</body>
+</html>

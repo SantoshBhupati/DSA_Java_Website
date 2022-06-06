@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleting Element From Queue</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_introduction">
+        <p class="dsa">DATA STRUCTURES & ALGORITHMS</p>
+        <p class="intro">QUEUE – DELETING_ELEMENT</p>
+    </div>
+    <div class="main_information_box">
+        <div class="deleting_element">
+     <h2>Delete Element From Queue</h2>
+     <hr class="common_horizonatl_line">
+     <h3>Queue remove() method in Java</h3><br>
+     <p>The<b> remove()</b> method of Queue Interface returns and removes the element at the front the container. It deletes the head of the container. The method throws an NoSuchElementException when the Queue is empty.</p>
+     <h4>Syntax:</h4>
+     <div class="special_declartion">
+         <pre>E remove()</pre>
+     </div>
+     <p><b>Returns</b>: This method returns the head of the Queue.</p><br>
+     <p><b>Exception</b>: The function throws an NoSuchElementException when the Queue is empty.</p>
+     <br>
+     <h4>Below programs illustrate remove() method of Queue:</h4>
+     <div class="special_declartion">
+         <pre>
+            // Java Program Demonstrate remove()
+            // method of Queue
+            
+            import java.util.*;
+            
+            public class GFG {
+                public static void main(String[] args)
+                    throws IllegalStateException
+                {
+            
+                    // create object of Queue
+                    Queue<Integer> Q
+                        = new LinkedList<Integer>();
+            
+                    // Add numbers to end of Queue
+                    Q.add(7855642);
+                    Q.add(35658786);
+                    Q.add(5278367);
+                    Q.add(74381793);
+            
+                    // print queue
+                    System.out.println("Queue: " + Q);
+            
+                    // print head and deletes the head
+                    System.out.println("Queue's head: " + Q.remove());
+            
+                    // print head and deleted the head
+                    System.out.println("Queue's head: " + Q.remove());
+                }
+            }
+                     
+         </pre>
+     </div>
+     <h4>Output</h4>
+     <div class="special_declartion">
+         <pre>
+            Queue: [7855642, 35658786, 5278367, 74381793]
+            Queue's head: 7855642
+            Queue's head: 35658786
+         </pre>
+     </div>
+     </div>
+     </div>
+ 
+</body>
+</html>
